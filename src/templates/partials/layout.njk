@@ -5,23 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punjucks</title>
-    <link rel="stylesheet" href="./css/styles.scss" />
+    <link rel="stylesheet" href="../css/styles.scss" />
   </head>
   <body class="flex flex-col min-h-screen bg-indigo-900 text-indigo-100">
-    <header class="font-heading text-center text-xl font-bold p-4 bg-pink-700 text-pink-200 md:p-8 md:text-3xl lg:p-12 lg:text-6xl">
-  <h1>Punjucks</h1>
-</header>
+    {% include "./header.njk" %}
 
     <main class="flex-grow">
-      
+      {% block content %}
         Content will be inserted here
-      
+      {% endblock %}
     </main>
 
-    <footer class="bg-indigo-800 p-4 md:px-8">
-  <small>&copy; Michelle Barker 2021</small>
-</footer>
+    {% include "./footer.njk" %}
 
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
   </body>
 </html>

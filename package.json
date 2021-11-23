@@ -15,9 +15,9 @@
   },
   "scripts": {
     "start": "run-p run:parcel watch:nunjucks",
-    "run:parcel": "parcel src/index.html --port 3000 --open --no-source-maps",
-    "build:html": "nunjucks-to-html --baseDir src --dest src",
-    "build:parcel": "parcel build src/index.html --dist-dir dist --no-source-maps",
+    "run:parcel": "parcel src/pages/index.html --port 3000 --open --no-source-maps",
+    "build:html": "nunjucks-to-html --baseDir src/templates --dest src/pages",
+    "build:parcel": "parcel build src/pages/index.html --dist-dir dist --no-source-maps",
     "build:svg": "svg-sprite-generate -d src/icons -o src/sprite.svg",
     "build": "run-s clean build:html build:svg build:parcel",
     "watch:nunjucks": "npm-watch",
