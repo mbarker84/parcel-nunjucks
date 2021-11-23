@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Punjucks</title>
     <link rel="stylesheet" href="./css/styles.scss" />
   </head>
-  <body class="bg-blue-900 text-blue-100 p-8">
-    {% block content %}
+  <body class="flex flex-col min-h-screen bg-indigo-900 text-indigo-100">
+    {% include "./header.njk" %}
 
-    {% endblock %}
+    <main class="flex-grow">
+      {% block content %}
+        Content will be inserted here
+      {% endblock %}
+    </main>
+
+    {% include "./footer.njk" %}
 
     <script type="module" src="./js/index.js"></script>
   </body>
