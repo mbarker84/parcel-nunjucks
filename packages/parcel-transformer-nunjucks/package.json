@@ -1,0 +1,13 @@
+{
+  "name": "parcel-transformer-nunjucks",
+  "version": "1.0.0",
+  "engines": {
+    "parcel": "2.x"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.11.0",
+    "nunjucks": "^3.2.3",
+    "nunjucks-to-html": "^1.1.0"
+  }
+}
